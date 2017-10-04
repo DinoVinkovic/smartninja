@@ -1,0 +1,121 @@
+.container-fluid {
+  background-color: #4d0000;
+  border-radius: 5px;
+}
+
+body {
+  color: #4d0000;
+}
+
+hr {
+  width: 80%;
+  border-color: #ff9900;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #ffcc80;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ff9900;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #ffcc80;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ff9900;
+}
+
+/* carousel */
+#mycarousel {
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* end carousel */
+
+.form-control:hover {
+    border: 1px solid #ff9900;
+}
+
+.col-md-4 {
+  text-align: center;
+}
+
+#app {
+  display: inline-block;
+  width: 40%;
+  margin-right: 5em;
+}
+
+.row .btn {
+  background-color: #4d0000;
+  border-color: #ff9900;
+}
+
+.row .btn:hover {
+  border-color: #4d0000;
+  background-color: #ff9900;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+/* FAQ */
+.container .panel-heading {
+  background-color: #4d0000;
+  color: #ffcc80;
+}
+
+.container .panel-info {
+  border-color: #ffcc80;
+}
+
+.container .panel-heading a {
+  text-decoration: none;
+}
+
+.container .panel-heading a:hover {
+    color: #ff9900;
+}
+
+/* footer */
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+#footer-nav a {
+  color: #4d0000;
+  text-align: left;
+}
+
+#footer-nav a:hover {
+  text-decoration: none;
+  color: #ff9900;
+}
+
+footer h4 {
+  font-weight: bold;
+  text-align: center;
+}
