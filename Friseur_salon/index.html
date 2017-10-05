@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Friseur salon">
+  <meta name="keywords" content="haidresser, salon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friseur salon</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Joe's Barbershop</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#services">Our services</a></li>
+          <li><a href="#appointment">Make an appointment</a></li>
+          <li><a href="#faq">FAQ</a></li>
+
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END Navigation -->
+
+  <!-- Carousel -->
+  <div id="carousel-container" class="container">
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mycarousel" data-slide-to="1"></li>
+        <li data-target="#mycarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/haircuts_1.jpg" alt="image 1">
+        </div>
+
+        <div class="item">
+           <img src="images/haircuts_2.jpg" alt="image 2">
+        </div>
+
+        <div class="item">
+          <img src="images/haircuts_3.jpg" alt="image 3">
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#mycarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="right carousel-control" href="#mycarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- END Carousel -->
+
+  <br>
+  <hr>
+
+  <!-- Services -->
+  <div class="container" id="services">
+    <h2 class="text-center">Our services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Styling</h4>
+        <img src="https://storage.googleapis.com/smartninja-org-assets/curriculums/wd1/img/hairsalon-services-1.jpg">
+      </div>
+
+      <div class="col-md-4">
+        <h4>Coloring</span></h4>
+        <img src="https://storage.googleapis.com/smartninja-org-assets/curriculums/wd1/img/hairsalon-services-2.jpg">
+      </div>
+
+      <div class="col-md-4">
+        <h4>Haircuts</span></h4>
+        <img src="https://storage.googleapis.com/smartninja-org-assets/curriculums/wd1/img/hairsalon-services-3.jpg">
+      </div>
+    </div>
+  </div>
+  <!-- END Services -->
+
+  <br>
+  <hr>
+
+  <!-- Appointment -->
+  <div class="container" id="appointment">
+    <h2 class="text-center">Make an appointment</h2>
+    <br>
+    <div id="app" class="row">
+      <input type="text" class="form-control" placeholder="First and last name">
+      <br>
+      <input type="text" class="form-control" placeholder="Phone number">
+      <br>
+      <input type="text" class="form-control" placeholder="Date">
+      <br>
+      <textarea class="form-control" placeholder="Other info" rows="5"></textarea>
+      <br>
+      <input type="checkbox"> I agree with the terms of service
+      <br>
+      <br>
+      <button class="btn btn-success center-block">Send</button>
+    </div>
+
+    <div id="app" class="col-md-4 col-md-offset-1">
+       <table class="table">
+         <thead>
+           <tr>
+             <th>Day</th>
+             <th>Working hours</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>Monday</td>
+             <td>8:00 - 16:00</td>
+           </tr>
+           <tr>
+             <td>Tuesday</td>
+             <td>10:00 - 18:00</td>
+           </tr>
+           <tr>
+             <td>Wednesday</td>
+             <td>8:00 - 16:00</td>
+           </tr>
+           <tr>
+              <td>Thursday</td>
+              <td>8:00 - 16:00</td>
+           </tr>
+           <tr>
+              <td>Friday</td>
+              <td>12:00 - 20:00</td>
+           </tr>
+           <tr>
+              <td>Saturday</td>
+              <td>8:00 - 16:00</td>
+           </tr>
+           <tr>
+              <td>Sunday</td>
+              <td>8:00 - 12:00</td>
+           </tr>
+         </tbody>
+        </table>
+        <p>* Holidays: closed</p>
+      </div>
+    </div>
+  </div>
+  <!-- END Appointment -->
+
+  <hr>
+
+  <!-- FAQ -->
+  <div class="container" id="faq">
+    <h2 class="text-center">FAQ (Frequently Asked Questions)</h2>
+      <br>
+
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-info">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Do you accept credit cards?
+              </a>
+            </h4>
+          </div>
+
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+       </div>
+
+       <div class="panel panel-info">
+         <div class="panel-heading" role="tab" id="headingTwo">
+           <h4 class="panel-title">
+             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             Do you take walk-ins?
+             </a>
+           </h4>
+         </div>
+
+         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+           <div class="panel-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </div>
+         </div>
+      </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Do you offer gift cards?
+            </a>
+          </h4>
+        </div>
+
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END FAQ -->
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="container">
+     <div class="row">
+       <div class="col-md-4 col-md-offset-1">
+         <h4>Contact</h4>
+         <p>Address: Davis Station, Antarctica</p>
+         <p>Phone: -00 00 1234 567</p>
+         <p>Email: joe@joesbarbershop.at</p>
+      </div>
+
+      <div id="footer-nav" class="col-md-4">
+        <br>
+        <ul>
+          <li><a href="#services">Our services</a></li>
+          <li><a href="#appointment">Make an appointment</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+     </div>
+   </footer>
+</body>
+</html>
