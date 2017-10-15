@@ -1,12 +1,18 @@
-secret = 21
+import random
 
-guess = int(raw_input("Guess the secret number between 0 and 50: "))
+def main():
+    hidden_number = random.randint(1, 100)
+    user_guess = 0
 
-if guess == secret:
-    print "Congratz!"
-elif guess < secret:
-    print "Nope. Try higher."
-elif guess > secret:
-    print "Nope. Try lower."
-else:
-    print "Not a number!"
+    while not user_guess == hidden_number:
+        user_guess = int(raw_input("Guess the secret number between 0 and 100: "))
+
+        if user_guess == hidden_number:
+            print "That's right!"
+        elif user_guess < hidden_number:
+            print "Nope. Try higher."
+        elif user_guess > hidden_number:
+            print "Nope. Try lower."
+
+if __name__ == '__main__':
+    main()
