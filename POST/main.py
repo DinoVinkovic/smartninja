@@ -35,6 +35,7 @@ class GameHandler(BaseHandler):
     def get(self):
         return self.render_template("game.html")
 
+class GameResultHandler(BaseHandler):
     def post(self):
         secret_number = 37
         user_guess = int(self.request.get("user_guess"))
@@ -53,6 +54,7 @@ class ConverterHandler(BaseHandler):
     def get(self):
         return self.render_template("converter.html")
 
+class ConverterResultHandler(BaseHandler):
     def post(self):
         user_input = float(self.request.get("user_input"))
         selected_unit = self.request.get("unit")
@@ -69,5 +71,7 @@ class ConverterHandler(BaseHandler):
 app = webapp2.WSGIApplication([
     webapp2.Route('/', MainHandler),
     webapp2.Route('/game', GameHandler),
-    webapp2.Route('/converter', ConverterHandler)
+    webapp2.Route('/converter', ConverterHandler),
+    webapp2.Route('/game-result', GameResultHandler),
+    webapp2.Route('/converter-result', ConverterResultHandler)
 ], debug=True)
