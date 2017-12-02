@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A single message</title>
+</head>
+    <body>
+        <h2>Message Info</h2>
+
+        <p>Message ID: {{ message.key.id() }}</p>
+        <p>Text: {{ message.message_text }}</p>
+        <p>Date: {{ message.created }}</p>
+
+        <a href = "/message/{{ message.key.id() }}/edit">Edit message</a>
+        <br>
+        <a href = "/message/{{ message.key.id()}}/delete">Delete message</a>
+
+    </body>
+</html>

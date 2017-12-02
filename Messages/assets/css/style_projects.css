@@ -1,0 +1,29 @@
+.navbar{
+    background-image: none;
+    background-color: red;
+}
+
+.project-1 {
+    color: #87CEFA;
+}
+
+.project-1:hover {
+    color: #00008B;
+}
+
+.project-2 {
+    color: #7CFC00;
+}
+
+.project-2:hover {
+    color: #FF4500;
+}
+
+.project-3 {
+    color: #4B0082;
+}
+
+.project-3:hover {
+    color: #FF1493;
+}
+

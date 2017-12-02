@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block page_content %}
+    <h2>{{date}}</h2>
+    <h2>{{time}}</h2>
+
+    <form method="post" action="/result">
+        <input name="some_text">
+        <button type="submit">Publish</button>
+    </form>
+
+{% endblock page_content %}

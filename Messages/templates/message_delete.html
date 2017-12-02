@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Message</title>
+</head>
+    <body>
+        <h2>Do you really want to delete this message?</h2>
+
+        <form action="/message/{{ message.key.id() }}/delete" method="post">
+            <button type="submit">YES, delete!</button>
+        </form>
+
+    </body>
+</html>
